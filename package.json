@@ -31,7 +31,9 @@
   "author": "mdo",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "bootstrap": "^4.5.2",
+    "bootstrap-sass": "^3.4.1",
     "jquery": "^3.5.1",
     "popper.js": "1.16.1-lts"
   },

@@ -19,7 +19,7 @@ $enable-gradients: true;
 $enable-shadows: true;
 
 // Customize some defaults
-$body-color: purple;
+$body-color: black;
 $body-bg: #f5f5f5;
 
 
@@ -37,19 +37,19 @@ $body-bg: #f5f5f5;
 //
 // Import just the styles you need. Note that some stylesheets are required no matter what.
 
-@import "bootstrap/scss/functions"; // Required
-@import "bootstrap/scss/variables"; // Required
-@import "bootstrap/scss/mixins"; // Required
+@import "node_modules/bootstrap/scss/functions"; // Required
+@import "node_modules/bootstrap/scss/variables"; // Required
+@import "node_modules/bootstrap/scss/mixins"; // Required
 // @import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot"; // Required
-@import "bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/reboot"; // Required
+@import "node_modules/bootstrap/scss/type";
 // @import "bootstrap/scss/images";
 // @import "bootstrap/scss/code";
-@import "bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group"; // Requires forms
@@ -65,9 +65,9 @@ $body-bg: #f5f5f5;
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/media";
 // @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
+@import "node_modules/bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
@@ -83,4 +83,73 @@ $body-bg: #f5f5f5;
 
 body {
   padding: 3rem;
+}
+
+.icon-sm {
+  font-size: 40px;
+  position: relative;
+  top: -5px;
+}
+
+.coding-grid {
+  list-style: none;
+  grid-template-columns: auto auto auto;
+  display: grid;
+  grid-gap: 100px;
+}
+
+.image-icon {
+  width: auto;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.course-grid {
+  list-style: none;
+  grid-template-columns: auto auto;
+  display: grid;
+  grid-gap: 50px;
+}
+
+.course-grid > li {
+  box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  font-size:20px;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  border-radius: 5px;
+  border: solid 1px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #avatar2 {
+    margin-left: 70px;
+    margin-right: 100px;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
