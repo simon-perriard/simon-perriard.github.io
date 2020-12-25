@@ -9894,3 +9894,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   border-radius: 5px;
   border: solid 1px rgba(0, 0, 0, 0.05);
 }
+
+#more {
+  display: none;
+}
