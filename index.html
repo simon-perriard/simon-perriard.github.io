@@ -21,6 +21,16 @@
 	<!-- Theme CSS -->
 	<link id="theme-style" rel="stylesheet" href="assets/css/pillar-2.css">
 
+	<!-- Personal JS scripts-->
+	<script defer type="text/javascript">
+		function calculate_age() {
+			var me = new Date(1995, 10, 28);
+			var diff_ms = Date.now() - me.getTime();
+			var age_dt = new Date(diff_ms);
+			return "" + Math.abs(age_dt.getUTCFullYear() - 1970);
+		}
+	</script>
+
 </head>
 
 <body>
@@ -68,8 +78,9 @@
 				<section class="resume-section summary-section mb-5">
 					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">About me</h2>
 					<div class="resume-section-content">
-						<p class="mb-0">I am a second year cybersecurity master student at <a href="https://epfl.ch"
-								target="_blank">EPFL</a>. I like to tackle
+						<p class="mb-0">I am <script>document.write(calculate_age());</script> years old and also currently a second year cybersecurity master student
+							at <a href="https://epfl.ch" target="_blank">EPFL</a> and <a href="https://www.ethz.ch/en/"
+								target="_blank">ETHZ</a>. I like to tackle
 							challenging problems and design neat and efficient solutions. Fast-learner, cheerful and
 							hard-working, I am always excited to learn about new things. I am particularly interested in
 							homomorphic
@@ -469,7 +480,7 @@
 								<!--//resume-timeline-->
 							</div>
 						</section>
-						<!--//experience-section-->
+						<!--//education-section-->
 						<section class="resume-section education-section mb-5">
 							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
 							<div class="resume-section-content">
@@ -550,6 +561,83 @@
 							</div>
 						</section>
 						<!--//education-section-->
+						<!--//relevant-courses-section-->
+						<section class="resume-section relevant-courses-section mb-5">
+							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Relevant courses
+							</h2>
+							<div class="resume-section-content">
+								<div class="position-relative">
+									<ul class="course-grid text-center">
+										<li><a href="https://edu.epfl.ch/coursebook/en/advanced-algorithms-CS-450"
+												target="_blank">Advanced Algorithms</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/advanced-cryptography-COM-501"
+												target="_blank">Advanced Cryptography</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/advanced-probability-and-applications-COM-417"
+												target="_blank">Advanced Probability and Applications</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/algebra-MATH-310"
+												target="_blank">Algebra</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/algorithms-CS-250-1"
+												target="_blank">Algorithms</a></li>
+
+										<li><a href="https://infsec.ethz.ch/education/as2020/seclab.html"
+												target="_blank">Applied Security Laboratory</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/computer-architecture-i-CS-208"
+												target="_blank">Computer Architecture</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/computer-language-processing-CS-320"
+												target="_blank">Computer Language Processing</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/computer-networks-COM-208"
+												target="_blank">Computer Networks</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/computer-security-COM-301"
+												target="_blank">Computer Security</a></li>
+
+										<li><a href="https://infsec.ethz.ch/education/as2020/secsem.html"
+												target="_blank">Current Topics in Information Security</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/fr/cryptography-and-security-COM-401"
+												target="_blank">Cryptography and Security</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/information-security-and-privacy-COM-402"
+												target="_blank">Information Security and Privacy</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/fr/machine-learning-CS-433-1"
+												target="_blank">Machine Learning</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/probabilities-and-statistics-MATH-232"
+												target="_blank">Probabilities and Statistics</a></li>
+
+										<li><a href="https://infsec.ethz.ch/education/as2020/seceng.html"
+												target="_blank">Security Engineering</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/fr/software-engineering-CS-305"
+												target="_blank">Software Engineering</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/software-security-CS-412"
+												target="_blank">Software Security</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/fr/modeles-stochastiques-pour-les-communications-COM-300"
+												target="_blank">Stochastic Models for Communications</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/fr/programmation-orientee-systeme-CS-207-1"
+												target="_blank">System Oriented Programming</a></li>
+
+										<li><a href="https://syssec.ethz.ch/education/system_security/system_security_as20.html"
+												target="_blank">System Security</a></li>
+
+										<li><a href="https://edu.epfl.ch/coursebook/en/tcp-ip-networking-COM-407"
+												target="_blank">TCP/IP Networking</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<!--//relevant-courses-section-->
 					</div>
 					<div class="col-lg-3">
 						<section class="resume-section skills-section mb-5">
@@ -610,9 +698,6 @@
 									</ul>
 								</div>
 								<!--//resume-skill-item-->
-
-								<!--//resume-skill-item-->
-
 								<div class="resume-skill-item">
 									<h4 class="resume-skills-cat font-weight-bold">Others</h4>
 									<ul class="list-inline">
@@ -629,30 +714,7 @@
 							</div>
 							<!--resume-section-content-->
 						</section>
-						<!--//skills-section-->
-						<!--<section class="resume-section reference-section mb-5">
-							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
-							<div class="resume-section-content">
-								<ul class="list-unstyled resume-awards-list">
-									<li class="mb-2 pl-4 position-relative">
-										<i class="resume-award-icon fas fa-trophy position-absolute"
-											data-fa-transform="shrink-2"></i>
-										<div class="resume-award-name">Award Name Lorem</div>
-										<div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque
-											eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.
-										</div>
-									</li>
-									<li class="mb-0 pl-4 position-relative">
-										<i class="resume-award-icon fas fa-trophy position-absolute"
-											data-fa-transform="shrink-2"></i>
-										<div class="resume-award-name">Award Name Ipsum</div>
-										<div class="resume-award-desc">Award desc goes here, ultricies nec,
-											pellentesque.</div>
-									</li>
-								</ul>
-							</div>
-						</section>-->
-						<!--//interests-section-->
+						<!--//language-section-->
 						<section class="resume-section language-section mb-5">
 							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
 							<div class="resume-section-content">
@@ -668,7 +730,7 @@
 								</ul>
 							</div>
 						</section>
-						<!--//language-section-->
+						<!--//interests-section-->
 						<section class="resume-section interests-section mb-5">
 							<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
 							<div class="resume-section-content">
@@ -679,8 +741,6 @@
 								</ul>
 							</div>
 						</section>
-						<!--//interests-section-->
-
 					</div>
 				</div>
 				<!--//row-->
@@ -697,6 +757,7 @@
 		<small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
 				target="_blank">Xiaoying Riley</a> for developers</small>
 	</footer>
+
 </body>
 
 </html>
