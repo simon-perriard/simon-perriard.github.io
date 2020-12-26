@@ -314,6 +314,8 @@
 									</article>
 									<!--//resume-timeline-item-->
 
+									<span id="collapseProjects">
+
 									<article class="resume-timeline-item position-relative pb-5">
 
 										<div class="resume-timeline-item-header mb-2">
@@ -476,9 +478,11 @@
 
 									</article>
 									<!--//resume-timeline-item-->
+									</span>
 								</div>
 								<!--//resume-timeline-->
 							</div>
+							<button id="collapseProjectsBtn" class="btn btn-primary btn-sm btn-block" onclick="collapse(event)" data-spanId="collapseProjects">Show more</button>
 						</section>
 						<!--//education-section-->
 						<section class="resume-section education-section mb-5">
@@ -582,10 +586,10 @@
 
 										<li class="list-group-item"><a href="https://edu.epfl.ch/coursebook/en/algorithms-CS-250-1"
 												target="_blank">Algorithms</a></li>
-
+										<span id="collapseCourses">
 										<li class="list-group-item"><a href="https://infsec.ethz.ch/education/as2020/seclab.html"
 												target="_blank">Applied Security Laboratory</a></li>
-										<span id="more">
+										
 										<li class="list-group-item"><a href="https://edu.epfl.ch/coursebook/en/computer-architecture-i-CS-208"
 												target="_blank">Computer Architecture</a></li>
 
@@ -635,7 +639,7 @@
 												target="_blank">TCP/IP Networking</a></li>
 										</span>
 									</ul>
-									<button id="collapseBtn" class="btn btn-primary btn-sm btn-block" onclick="collapse()">Show more</button>
+									<button id="collapseCoursesBtn" class="btn btn-primary btn-sm btn-block" onclick="collapse(event)" data-spanId="collapseCourses">Show more</button>
 								</div>
 							</div>
 						</section>
@@ -761,9 +765,13 @@
 	</footer>
 
 	<script>
-		function collapse() {
-			var moreList = document.getElementById("more");
-			var btnTxt = document.getElementById("collapseBtn");
+		function collapse(event) {
+
+			let spanId = event.target.getAttribute("data-spanId");
+			let btnId = event.target.getAttribute("id");
+
+			let moreList = document.getElementById(spanId);
+			let btnTxt = document.getElementById(btnId);
 
 			if (moreList.style.display === "none" || moreList.style.display === "") {
 				moreList.style.display = "block";

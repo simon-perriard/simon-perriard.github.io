@@ -9880,6 +9880,14 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
   }
 }
 
-#more {
+#collapseProjects {
+  display: none;
+}
+
+#collapseProjectsBtn {
+  margin-top: 10px;
+}
+
+#collapseCourses {
   display: none;
 }
