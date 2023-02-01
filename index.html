@@ -24,16 +24,6 @@
 	<!-- Theme CSS -->
 	<link id="theme-style" rel="stylesheet" href="assets/css/pillar-2.css">
 
-	<!-- Personal JS scripts-->
-	<script defer type="text/javascript">
-		function calculate_age() {
-			var me = new Date(1995, 10, 28);
-			var diff_ms = Date.now() - me.getTime();
-			var age_dt = new Date(diff_ms);
-			return "" + Math.abs(age_dt.getUTCFullYear() - 1970);
-		}
-	</script>
-
 </head>
 
 <body>
@@ -81,14 +71,13 @@
 				<section class="resume-section summary-section mb-5">
 					<h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">About me</h2>
 					<div class="resume-section-content">
-						<p class="mb-0">I am <script>document.write(calculate_age());</script> years old and also currently a second year cybersecurity master student
-							at <a href="https://epfl.ch" target="_blank">EPFL</a> and <a href="https://www.ethz.ch/en/"
-								target="_blank">ETHZ</a>. I like to tackle
+						<p class="mb-0">I am a smart contract auditor and blockchain security engineer at <a href="https://chainsecurity.com" target="_blank">ChainSecurity</a>. I like to tackle
 							challenging problems and design neat and efficient solutions. Fast-learner, cheerful and
-							hard-working, I am always excited to learn about new things. I am particularly interested in
-							homomorphic
-							and post-quantum cryptography, data privacy and security as well as machine learning. I am
-							never against a nice CTF or arbitrary code execution! I like mountains and coffee.</p>
+							hard-working, I am always excited to learn about new things.
+						</p>
+						<p class="mb-0">
+							I am particularly interested in zero-knowledge proofs and their applications in the blockchain space (zkSNARKs, zkSTARKs), a wiki on the topic is slowly cooking. I'm also into post-quantum cryptography, data privacy, and rockets. I am never against a nice CTF or arbitrary code execution! I like mountains and coffee.
+						</p>
 					</div>
 				</section>
 				<!--//summary-section-->
@@ -104,19 +93,55 @@
 
 										<div class="resume-timeline-item-header mb-2">
 											<div class="d-flex flex-column flex-md-row">
-												<h3 class="resume-position-title font-weight-bold mb-1">Master project
+												<h3 class="resume-position-title font-weight-bold mb-1">Blockchain security engineer
 												</h3>
 												<div class="resume-company-name ml-auto"><a href="https://chainsecurity.com/"
 														target="_blank">ChainSecurity</a></div>
 											</div>
 											<!--//row-->
-											<div class="resume-position-time">2022</div>
+											<div class="resume-position-time"> 2022 - present</div>
+										</div>
+										<!--//resume-timeline-item-header-->
+										<div class="resume-timeline-item-desc">
+											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
+												used:</h4>
+											<ul class="list-inline">
+												<li class="list-inline-item"><span
+														class="badge badge-primary badge-pill">Ethereum</span></li>
+												<li class="list-inline-item"><span
+														class="badge badge-primary badge-pill">Solidity</span></li>
+												<li class="list-inline-item"><span
+													class="badge badge-primary badge-pill">DeFi</span></li>
+												<li class="list-inline-item"><span
+													class="badge badge-primary badge-pill">Foundry</span></li>
+											</ul>
+										</div>
+										<!--//resume-timeline-item-desc-->
+
+									</article>
+									<!--//resume-timeline-item-->
+
+									<article class="resume-timeline-item position-relative pb-5">
+
+										<div class="resume-timeline-item-header mb-2">
+											<div class="d-flex flex-column flex-md-row">
+												<h3 class="resume-position-title font-weight-bold mb-1">Master project
+												</h3>
+												<div class="resume-company-name ml-auto"><a href="https://chainsecurity.com/"
+														target="_blank">ChainSecurity</a>,
+												<a href="https://dslab.epfl.ch/"
+												target="_blank">DSLab</a></div>
+											</div>
+											<!--//row-->
+											<div class="resume-position-time"> Spring 2022</div>
 										</div>
 										<!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
 											<p>Static analyzer for Substrate FRAME's pallets. The tool analyzes the pallets to extract the worst complexity of each extrinsic, so that developers can check whether their weights functions account for the worst case. A badly written weight function could be a attack vector for a DoS against the parachain.</p>
 											<p><a href="https://github.com/simon-perriard/saft" target="_blank"><i
 												class="fab fa-github fa-fw"></i> Github repo</a></p>
+											<p><a href="/assets/pdf/Master_thesis_report.pdf" target="_blank"><i
+												class="far fa-file-pdf fa-fw"></i> Report</a></p>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
 												used:</h4>
 											<ul class="list-inline">
@@ -142,7 +167,8 @@
 												<h3 class="resume-position-title font-weight-bold mb-1">Internship as blockchain security engineer
 												</h3>
 												<div class="resume-company-name ml-auto"><a href="https://chainsecurity.com/"
-														target="_blank">ChainSecurity</a></div>
+														target="_blank">ChainSecurity</a>
+												</div>
 											</div>
 											<!--//row-->
 											<div class="resume-position-time">2021 - 2022</div>
@@ -177,24 +203,15 @@
 														target="_blank">LDS</a></div>
 											</div>
 											<!--//row-->
-											<div class="resume-position-time">2021</div>
+											<div class="resume-position-time">Spring 2021</div>
 										</div>
 										<!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
-											<p>Using standard hyperparameter tuning algorithms (grid search, random search, bayesian optimization, ...) under federated setting and privacy preserving (HE or SMC) frameworks adds a huge communication and computation overhead. The goal of the project is to find a way to tune hyperparameters without relying on costly frameworks under encryption. The experiments are conducted on several datasets and several models, with iid and non-iid data distribution amongst clients. The final report can be found <a href="/assets/pdf/Semester_project_report_ieee.pdf"
-												target="_blank">here</a>.</p>
+											<p>Using standard hyperparameter tuning algorithms (grid search, random search, bayesian optimization, ...) under federated setting and privacy preserving (HE or SMC) frameworks adds a huge communication and computation overhead. The goal of the project is to find a way to tune hyperparameters without relying on costly frameworks under encryption. The experiments are conducted on several datasets and several models, with iid and non-iid data distribution amongst clients.
 											<p><a href="https://github.com/ldsec/projects-data/tree/master/hyperparameter_tuning" target="_blank"><i
 												class="fab fa-github fa-fw"></i> Github repo</a></p>
-											<!--<h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:
-											</h4>
-											<p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas
-												molestias excepturi sint occaecati cupiditate non provident.</p>
-											<ul>
-												<li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-												<li>At vero eos et accusamus et iusto odio dignissimos.</li>
-												<li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
-												<li>Maecenas tempus tellus eget.</li>
-											</ul>-->
+											<p><a href="/assets/pdf/Semester_project_report_ieee.pdf" target="_blank"><i
+													class="far fa-file-pdf fa-fw"></i> Report</a></p>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
 												used:</h4>
 											<ul class="list-inline">
@@ -278,11 +295,7 @@
 										<!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
 											<p>In this group project we had to design, implement and analyse a
-												Certificate Authority infrastructure. The specifications can be found <a
-													href="assets/pdf/CA_project.pdf" target="_blank">here</a>, our group
-												report is <a
-													href="/assets/pdf/AppSecLab__System_Description_and_Risk_Analysis.pdf"
-													target="_blank">here</a>.</p>
+												Certificate Authority infrastructure.
 											<p>My role in this project was to setup the virtual machines/network and
 												configure the router/firewall (iptables). I was also responsible for the
 												database VM, and more precisely: enforce the least privilege property
@@ -291,6 +304,10 @@
 
 											<p><a href="https://github.com/appseclabepfl/project" target="_blank"><i
 														class="fab fa-github fa-fw"></i> Github repo</a></p>
+											<p><a href="assets/pdf/CA_project.pdf" target="_blank"><i
+												class="far fa-file-pdf fa-fw"></i> Specifications</a></p>
+											<p><a href="/assets/pdf/AppSecLab__System_Description_and_Risk_Analysis.pdf" target="_blank"><i
+												class="far fa-file-pdf fa-fw"></i> Report</a></p>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Technologies
 												used:</h4>
 											<ul class="list-inline">
@@ -568,10 +585,11 @@
 												</div>
 											</div>
 											<!--//row-->
-											<div class="resume-position-time">2019 - Present</div>
+											<div class="resume-position-time">2019 - 2022</div>
 										</div>
 										<!--//resume-timeline-item-header-->
 										<div class="resume-timeline-item-desc">
+											GPA: 4.96/6
 										</div>
 										<!--//resume-timeline-item-desc-->
 									</article>
@@ -655,9 +673,9 @@
 										<div class="resume-timeline-item-desc">
 											I learned about the architecture of blockchains and how they work.
 											I was introduced to Ethereum smart contracts programming language
-											<a href="https://docs.soliditylang.org/en/v0.8.4/">Solidity</a> and
+											<a href="https://docs.soliditylang.org/en/latest/" target="_blank">Solidity</a> and
 											I am able to design and program smart contracts and decentralized applications.
-											You can find the course's certificate <a href="https://coursera.org/share/4eedcb74cba65b58d063761660d25389">here</a>.
+											You can find the course's certificate <a href="https://coursera.org/share/4eedcb74cba65b58d063761660d25389" target="_blank">here</a>.
 										</div>
 										<!--//resume-timeline-item-desc-->
 									</article>
